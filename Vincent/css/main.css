@@ -1,0 +1,331 @@
+body{
+		overflow-x: hidden;
+	}	
+	#main{
+		width: 100%;
+		height: 100%;
+		/*background: rgba(39,40,34,0.8);*/
+		background: rgba(246,246,246,0);
+		opacity: 1;
+		transition: 1s;
+	}
+	/*内容部分样式设计*/
+	#content{
+		padding-top: 70px;
+		background: rgba(246,246,246,0.5);
+	}
+	/*欢迎海报样式设计*/
+	#poster_wel{
+		width: 100%;
+		height: 500px;
+		position: relative;
+		overflow: hidden;
+	}
+	#poster_wel>img{
+		margin:-200px 0px 0px -240px;
+		width: 120%;
+		/*width: 130%;		/*手机的样式*/
+		/*height: 150%;*/
+		transition: 2s;
+	}
+	#txt{
+		position: absolute;
+		width: 400px;
+		left: 38%;
+		top: 34%;
+	}
+	#txt h1{
+		/*font-family: "Calibri";*/
+		font-size: 70px;
+		margin-bottom: 16px;
+		/*color: #ff0000;*/
+		transition: 1s;
+		/*文字颜色渐变效果*/
+		background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(214, 54, 54, 1)), to(rgba(54, 85, 214, 0.8)));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	#w_line{
+		width: 240px;
+		height: 4px;
+		/*背景颜色渐变效果*/
+		background: -webkit-gradient(linear, left center,right center , from(rgba(214, 54, 54, 1)), to(rgba(54, 85, 214, 0.8)));
+		position: absolute;
+		bottom: 0%;
+		left: 10%;
+		transition: 1s;
+	}
+	/*self_intro样式设计*/
+	#self_intro{
+		width: 100%;
+		height: 210px;
+		/*background: #fff;*/
+		text-align: center;
+		position: relative;
+		padding: 50px 0px;
+		opacity: 0;				
+		/*opacity: 1;*/				/*手机上样式*/
+		transition: 1s;
+		/*文字颜色渐变效果*/
+		background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(214, 54, 54, 1)), to(rgba(54, 85, 214, 0.8)));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	#self_intro h1{
+		font-size: 60px;
+		/*color: #815548;*/
+		
+	}
+	#self_intro h1>label{
+		margin-left: 5px;
+		font-style:italic;
+		/*文字颜色渐变效果*/
+		background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(214, 54, 54, 1)), to(rgba(54, 85, 214, 0.8)));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	#self_intro h3{
+		font-size: 30px;
+		/*color: #815548;*/
+		margin-bottom: 10px;
+		
+	}
+	#self_intro p{
+		font-size: 30px;
+		/*color: #815548;*/
+	}
+	/*分隔栏设计*/
+	#gas{
+		width: 400px;
+		height: 4px;
+		/*background: rgba(84,85,81,0.5);*/
+		position: absolute;
+		bottom: 0%;
+		left: 36%;
+		/*left : 30%;	*/			/*手机的样式*/
+		/*背景颜色渐变效果*/
+		background: -webkit-gradient(linear, left center,right center , from(rgba(214, 54, 54, 1)), to(rgba(54, 85, 214, 0.8)));
+	}
+	/*page_link部分样式设计*/
+	#page_link{
+		/*border-top: 1px solid red;*/
+		width: 100%;
+		height: 600px;
+		padding: 50px 0px;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+	}
+	#box_pic,#box_mus,#box_hob{
+		width: 340px;
+		/*width: 28%;*/		/*340px*/	/*手机上样式*/
+		height: 580px;
+		padding: 10px;
+		margin: 0px 26px;
+		/*margin: 0px 10px;*/			/*手机上样式*/
+		/*border:1px solid #000;*/
+		box-shadow: 0px 0px 10px #000;
+		border-radius: 10px;
+		background: #fff;
+		float: left;
+		position: relative;
+		transition: 1s;
+		transition-delay: 0.5s;
+		transform: translate(0px,0px);
+	}
+	#box_pic{
+		margin-left: 90px;
+		/*margin-left: 22px;*/			/*手机上样式*/
+	}
+	#box_pic div:first-child{
+		background: url("../images/box_pic.jpg") no-repeat;
+		background-size: 130px 130px;
+	} 
+	#box_mus div:first-child{
+		background: url("../images/box_mus.jpg") no-repeat;
+		background-size: 130px 130px;
+	} 
+	#box_hob div:first-child{
+		background: url("../images/box_hob.jpg") no-repeat;
+		background-size: 130px 130px;
+	}
+	.p_icon{
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		margin: 30px auto;
+	}
+	.p_line0,.p_line1{
+		position: absolute;
+		width: 80px;
+		height: 2px;
+		background: #C1C4C4;
+		left: 39%;
+	} 		
+	.p_line0{
+		top: 32%;
+	}
+	.p_line1{
+		top: 40%;
+	}
+	#page_link h2{
+		font-size: 22px;
+		margin-bottom: 50px;
+	}
+	#page_link p{
+		font-size: 16px;
+		/*font-family: ""*/
+		color: #6F6F6F;
+	}
+	/*p_link里面的按钮样式*/
+	.links{
+		width: 120px;
+		height: 36px;
+		font-size: 18px;
+		line-height: 36px;
+		text-align: center;
+		border: 2px solid #fff;
+		border-radius: 20px;
+		box-shadow: 0px 0px 10px #000;
+		/*position: absolute;*/
+		margin: 40px auto;
+		background: rgba(193,196,196,0.8);
+		opacity: 0;
+		transition: 1s;
+		transition-delay: 1s;
+		cursor: pointer;
+		/*opacity: 1;*/      /*手机的样式*/
+ 		/*left: 30%;*/
+	}
+	.links:hover{
+		transform: scale(1.2);
+	}
+	/*每个div的四条动画边框*/
+	.l_top,.l_bottom{
+		position: absolute;
+		width: 340px;
+		/*width: 270px;*/		/*手机的样式*/
+		height: 6px;
+		border-radius: 2px;
+		/*background: #818181;*/
+		/*背景颜色渐变效果*/
+		background: -webkit-gradient(linear, left center,right center , from(rgba(214, 54, 54, 1)), to(rgba(54, 85, 214, 0.8)));
+		transition: 0.5s;
+	}
+	.l_top{
+		top: 0px;
+		transform: translateX(-340px);
+		opacity: 0;
+	}
+	.l_bottom{
+		bottom: 0px;
+		transform: translateX(340px);
+		opacity: 0;
+	}
+	.l_left,.l_right{
+		position: absolute;
+		width: 6px;
+		height: 580px;
+		/*background: #818181;*/
+		border-radius: 2px;
+		/*背景颜色渐变效果*/
+		background: -webkit-gradient(linear, left center,right center , from(rgba(214, 54, 54, 1)), to(rgba(54, 85, 214, 0.8)));
+		transition: 0.5s;
+		top: 10px;
+	}
+	.l_left{
+		left: 0px;
+		transform: translateY(580px);
+		opacity: 0;
+	}
+	.l_right{
+		right: 0px;
+		transform: translateY(-580px);
+		opacity: 0;
+	}
+	/*脚部滑动栏*/
+	#foot{
+		width: 100%;
+		background: rgba(39,209,179,1);
+		text-align: center;
+		position: relative;
+		top: 0px;
+		/*bottom:0%;*/			/*手机上的样式--JS代码中也得改*/
+		padding: 10px 0px;
+		height: 80px;
+		overflow: hidden;
+		clear: both;
+		/*transition: 2s;*/
+	}
+	#foot h2{
+		font-size: 40px;
+		margin:20px 0px;
+		color: #fff;
+	}
+	#foot h1{
+		font-size: 46px;
+		margin:20px 0px 50px 0px;
+		color: #fff;
+	}
+	.form{
+		position: relative;
+		z-index: 0;
+	}
+	.information{
+		display: block;
+		width: 300px;
+		/*height: 50px;*/
+		/*line-height: 100px;*/
+		padding:5px;
+		font-size: 30px;
+		/*background: rgba(39,209,179,0.8);*/
+		background: none;
+		border:2px solid #fff;
+		border-radius: 10px;
+		margin: 20px auto;
+		font-family: "Calibri";
+		color: #fff;
+		z-index: 1000;
+	}
+	#foot input{
+		height: 50px;
+	}
+	textarea{
+		padding-top: 5px;
+		height: 120px;
+		line-height: 40px;
+		resize: none;
+		outline: none;
+	}
+	#send{
+		background: none;
+		width: 220px;
+		height: 50px;
+		border:2px solid #fff;
+		border-radius: 20px;
+		font-size: 30px;
+		color: #fff;
+		margin-bottom: 50px;
+		cursor: pointer;
+	}
+	#send:hover{
+		box-shadow: 0px 0px 10px #000;
+	}
+	#contain{
+		position: absolute;
+		top: 20px;
+		left: 525px;
+		/*left: 36%;*/			/*手机的样式*/
+		/*border:1px solid red;*/
+		z-index: -10;
+		text-align: left;
+		padding-left: 10px;
+	}
+	.placeholder{
+		font-size: 30px;
+		color: #fff;
+		height: 50px;
+		margin-bottom: 36px;
+		transition: 1s;
+		z-index: -10;
+	}

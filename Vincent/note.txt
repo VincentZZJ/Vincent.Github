@@ -1,0 +1,4 @@
+1、清浮动对于position：absolute并没效果，这在comment页面中有所体现，记住这个点
+
+2、在用原生AJAX发送请求的时候！拜托看清楚你的request.setRequestHeader('Content-Type','application/x-www-form-urlencoded')有没有写对
+	（PS：因为采用原生AJAX的post发送时，若不设置请求头的类型，则默认为text/plain,在chrome的后台显示的请求体中是以request payload中存在，不能在php中以$_POST['']获取；故一定记得写啊！ 或者用JQ封装好的AJAX）

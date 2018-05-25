@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vincent-Media</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/media.css">
+	<script type="text/javascript" src="./js/header.js"></script>
+	<script type="text/javascript" src="./js/media.js"></script>
+</head>
+<body>
+	<!-- 该页主盒子 -->
+	<div id="media">
+		<!-- 顶部header -->
+		<header id="header">
+			<!-- header左侧的区域 -->
+			<div id="icon"></div>
+			<div id="sign">
+				| Vincent
+			</div>
+			<!-- header右侧导航栏区域 -->
+			<nav>
+				<ul id="nav">
+					<li><div class="line1" id="line1"></div><a href="./main.html">Home</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./photo.html">Photo</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./music.html"  class="active">Media</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./factory.html">Factory</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./comment.html">Comment</a><div class="line2"></div></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- 下面内容部分 -->
+		<div id="content">
+			<!-- Media的盒子 -->
+			<div id="play_wrap">				
+				<!-- 媒体盒子的中间显示部分 -->
+				<div id="playBox">
+					<div id="album_bg"></div>
+					<!-- 媒体盒子上部的信息 -->
+					<div class="navTop">
+						<div id="volCtr_btn">VOL</div>
+						<h2 id="m_title"></h2>
+						<div id="list_btn">
+							<div id="lines">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</div>
+						<!-- 切换为MV的按钮 -->
+						<div id="switchMV">MV</div>
+					</div>
+					<!-- 播放器中间的圈圈 -->
+					<div id="album">
+						<img src="./images/music/Vivalavida-ColdPlay.jpg">
+					</div>
+				</div>		
+				<!-- 进度条 -->
+				<div id="durCtr">
+					<div id="dur_bg">
+						<div id="process"></div>
+						<div id="dur_picker"></div>
+						<div id="showTime">10</div>
+					</div>
+					<div id="nowTime">00:00</div>
+					<div id="endTime"></div>
+				</div>
+					
+				<!-- 媒体盒子下面的控制条 -->
+				<div id="control">
+					<div id="prev"><img src="./images/music/prev.png" class="con_pic"></div>
+					<div id="play"><img src="./images/music/play.png" class="con_pic"></div>
+					<div id="next"><img src="./images/music/next.png" class="con_pic"></div>
+				</div>
+				<!-- 左侧的音量条 -->
+				<div id="volCtr">
+					<div id="vol_bg">
+						<div id="volume"></div>
+						<div id="vol_picker"></div>
+						<div id="vol_show">50</div>
+					</div>
+					<div class="vol_add"></div>
+					<div class="vol_del"></div>
+				</div>
+				<!-- 右侧的播放列表 -->
+				<div id="list_bg">
+					<!-- <dir id="filter"></dir> -->
+					<ul id="play_list">
+						
+					</ul>
+				</div>
+			</div>
+			<!-- 视频框 -->
+			<div id="mvBox">
+				<div id="mv">
+					<div id="mv_ctr">
+						<div class="mvline"></div>
+						<div class="mvline"></div>
+					</div>
+					<video id="mvPlay"  src="./mv/Red-TaylorSwift.mp4" type="video/mp4">
+						<!-- <source src="./mv/Red-TaylorSwift.mp4" type="video/mp4"> -->
+					</video>
+				</div>		
+			</div>
+			<!-- 音乐框 -->
+			<audio src="./song/Red.mp3" title="Red - Taylor Swift"></audio>
+			<audio src="./song/ColdPlay.mp3" title="Viva la vida - ColdPlay"></audio>
+			<audio src="./song/LoveYourself.mp3" title="Love Yourself - Justin Bieber"></audio>
+		</div>
+	</div>
+</body>
+</html>

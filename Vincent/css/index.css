@@ -1,0 +1,148 @@
+body{
+		overflow-x: hidden;
+		font-family:Verdana, Arial, sans-serif;
+	}
+	#index{
+		opacity: 0;
+		transition: 1s;
+	}
+	/*banner部分样式*/
+	#banner{
+		width: 100%;
+		height: 380px;		/*380px*/
+		overflow:hidden;
+		position: relative;
+	}
+	#banner>img{
+		width: 110%;
+		transition: 2s;
+		margin-left: -20px;
+		/*transform: translate(-20px,0px);*/
+	}
+	/*banner内信息部分展示*/
+	#intro{
+		width: 1200px;
+		height: 240px;
+		padding: 10px;
+		position: absolute;
+		left: 10%;
+		top: 20%;
+		/*border:1px solid #fff;*/
+	}
+	#intro ul{
+		list-style: none;
+	}
+	#intro li{
+		float: left;
+		width: 260px;
+		margin-right: 20px;
+		text-align: center;
+		color: #fff;
+		/*border:1px solid #fff;*/
+	}
+	#intro li:last-child{
+		margin-right: 0px;
+	}
+	#intro h1{
+		/*font-family: "宋体";*/
+		font-size: 24px;
+		margin: 20px 0px;
+	}
+	#intro h6{
+		font-size: 18px;
+		margin: 30px 0px;
+		font-family: "Calibri";
+	}
+	/*#intro h2*/
+	/*头像区域*/
+	#icon{
+		width: 120px;
+		height: 120px;
+		background: url("../images/pic_head.png") no-repeat;
+		background-size: 120px 120px;
+		margin-left: 70px;
+		margin-bottom: 10px;
+		border:1px solid #fff;
+		border-radius: 5px;
+		transition: 2s;
+	}
+	#icon:hover{
+		transform: rotate(360deg);
+		box-shadow: 0px 0px 10px #000;
+	}
+	/*follow区域*/
+	#follow_list{
+		width: 200px;
+		margin:0px auto;
+		padding: 5px;
+		/*border:1px solid #fff;*/
+	}
+	#follow_list>img{
+		vertical-align: middle;
+		border:1px solid #fff;
+		border-radius: 5px;
+		background: #000;
+		width: 40px; 
+		height:40px;
+		margin:10px;
+		transition: 1s;
+	}
+	#follow_list>img:hover{
+		transform: scale(1.2);
+		box-shadow: 0px 0px 10px #000;
+		/*animation: followlist 4s;*/
+	}
+	/*@keyframes followlist{
+		from{transform: translateY(0px);opacity: 1;}
+		to{transform: translateY(-50px);opacity: 0;}
+	}*/
+	/*学校区域*/
+	#gdut{
+		width: 120px;
+		height: 120px;
+		border:3px solid #fff;
+		box-shadow: 0px 0px 10px #000;
+		border-radius: 50%;
+		background: url("../images/school_gdut.png") no-repeat;
+		background-size: 120px 120px;
+		margin: 0px auto;
+		transition: 2s;
+	}
+	#gdut:hover{
+		transform: scale(1.8);
+		box-shadow: 0px 0px 10px #000;
+	}
+	#intro h4:last-child{
+		margin-top: 10px;
+	}
+	/*页面下部分loadin*/
+	#loadin{
+		width: 100%;
+		position: relative;
+	}
+	/*标题居中*/
+	#loadin h1{
+		text-align: center;
+		/*font-size: 26px;*/
+		font-family: "Calibri Light";
+		margin:20px 0px;
+	}
+	#line{
+		width: 80px;
+		height: 3px;
+		background: rgba(86,178,230,0.8);
+		margin:0px auto;
+	}
+	#entrance{
+		width: 120px;
+		height: 120px;
+		background:url("../images/pic_head.png") no-repeat;
+		background-size: 120px 120px;
+		border-radius: 50%;
+		margin: 20px auto;
+		transition: 2s;
+	}
+	#entrance:hover{
+		transform: scale(1.2);
+		box-shadow: 0px 0px 10px #000;
+	}

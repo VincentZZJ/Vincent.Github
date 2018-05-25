@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vincent-Photo</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/photo.css">
+	<script type="text/javascript" src="./js/header.js"></script>
+	<script type="text/javascript" src="./js/photo.js"></script>
+</head>
+<body>
+	<!-- 子页-photo的盒子 -->
+	<div id="photo">
+		<!-- 顶部header -->
+		<header id="header">
+			<!-- header左侧的区域 -->
+			<div id="icon"></div>
+			<div id="sign">
+				| Vincent
+			</div>
+			<!-- header右侧导航栏区域 -->
+			<nav>
+				<ul id="nav">
+					<li><div class="line1" id="line1"></div><a href="./main.html">Home</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./photo.html" class="active">Photo</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./media.html">Media</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./factory.html">Factory</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./comment.html">Comment</a><div class="line2"></div></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- banner图片的轮播 -->
+		<div id="banner">
+			<div id="pic">
+				<img src="./images/photo/travel_bg.png" class="travel">
+				<img src="./images/photo/live_bg.jpg" class="life">
+				<img src="./images/photo/sport_bg.png" class="sport">
+			</div>
+			<div id="gas"></div>
+			<div id="l_turn"><</div>
+			<div id="r_turn">></div>
+		</div>
+		<!-- content模块区域 -->
+		<div id="content">
+			<!-- 生活类图片区域 -->
+			<div id="c_box">
+				<div id="pic_aside"><img src="./images/photo/live_aside.png" class="pic_aside"></div>			<!-- 鼠标滑入的时候改变透明度，并desc变颜色而且旋转 -->
+				<div class="desc">Lives</div>
+				<div class="aside_line"></div>
+				<!-- 下面用于装载图片 -->
+				<div id="pics_box">
+					<div class="pics_box">
+						<img src="./images/photo/Lives/0.png">
+						<img src="./images/photo/Lives/1.png">
+						<img src="./images/photo/Lives/2.png">
+						<img src="./images/photo/Lives/3.png">
+						<img src="./images/photo/Lives/4.png">
+						<img src="./images/photo/Lives/5.png">
+						<img src="./images/photo/Lives/6.png">
+						<img src="./images/photo/Lives/7.png">
+						<img src="./images/photo/Lives/8.png">
+						<img src="./images/photo/Lives/9.png">
+						<img src="./images/photo/Lives/10.png">
+						<img src="./images/photo/Lives/11.png">
+						<img src="./images/photo/Lives/12.png">
+						<img src="./images/photo/Lives/13.png">
+						<img src="./images/photo/Lives/14.png">
+						<img src="./images/photo/Lives/15.png">
+					</div>	
+				</div>
+				<!-- 上下轮滑图标 -->
+				<div class="pic_up"> < </div>
+				<div class="pic_down"> > </div>
+				<!-- 右上侧滑动图标 -->
+				<ul id="pics_nav">
+					<li>
+						<div id="p_lines">
+							<div class="p_line1"></div>
+							<div class="p_line2"></div>
+							<div class="p_line3"></div>
+						</div>
+					</li>
+					<li class="pics_li"><img src="./images/photo/li_live.png"></li>
+					<li class="pics_li"><img src="./images/photo/li_travel.png"></li>
+					<li class="pics_li"><img src="./images/photo/li_sport.png"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

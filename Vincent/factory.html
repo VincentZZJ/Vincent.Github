@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vincent-Factory</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/factory.css">
+	<script type="text/javascript" src="./js/header.js"></script>
+	<script type="text/javascript" src="./js/factory.js"></script>
+</head>
+<body>
+	<!-- 主盒子 -->
+	<div id="factory"> 
+		<!-- 头部内容 -->
+		<header id="header">
+			<!-- header左侧的区域 -->
+			<div id="icon"></div>
+			<div id="sign">
+				| Vincent
+			</div>
+			<!-- header右侧导航栏区域 -->
+			<nav>
+				<ul id="nav">
+					<li><div class="line1" id="line1"></div><a href="./main.html">Home</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./photo.html">Photo</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./media.html">Media</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./factory.html"  class="active">Factory</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./comment.html">Comment</a><div class="line2"></div></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- 内容部分 -->
+		<div id="content">
+			<!-- 中间搜索框 -->
+			<div id="searchBox">
+				<input type="text" name="text" placeholder="Do you want to find sth..."><input type="button" name="search" value="search">
+				<!-- 编辑栏 -->
+				<div id="editBox">
+					<!-- 1、正常添加笔记  2、添加大区  3、拖动 -->
+					<ul>
+						<li>
+							<div id="lines">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</li>
+						<li>
+							<div id="edit"></div>
+						</li>
+						<li>
+							<div id="add"></div>
+						</li>
+					</ul>
+				</div>
+				<!-- 分割线 -->
+				<div id="gas"></div>
+			</div>
+			<!-- 下面的部分展示框 -->			<!-- 后台记录每一模块被查询的次数，按次数降序依次排列 -->
+			<div id="noteBox">
+				<!-- html块 -->
+				<div id="note_html" class="n_box">
+					<h2>HTML-Zone</h2>
+					<ul class="note_list">
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+					</ul>
+				</div>
+				<!-- css块 -->
+				<div id="note_html" class="n_box">
+					<h2>CSS-Zone</h2>
+					<ul class="note_list">
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+					</ul>
+				</div>
+				<!-- js块 -->
+				<div id="note_html" class="n_box">
+					<h2>JS-Zone</h2>
+					<ul class="note_list">
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+					</ul>
+				</div>
+				<!-- php块 -->
+				<div id="note_html" class="n_box">
+					<h2>PHP-Zone</h2>
+					<ul class="note_list">
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+					</ul>
+				</div>
+				<!-- java块 -->
+				<div id="note_html" class="n_box">
+					<h2>JAVA-Zone</h2>
+					<ul class="note_list">
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+					</ul>
+				</div>
+				<!-- SQL块 -->
+				<div id="note_html" class="n_box">
+					<h2>SQL-Zone</h2>
+					<ul class="note_list">
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+						<li>HTML5的新特性<time>2018-05-24</time></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 填写新笔记 -->
+		<div id="new_note">
+			<div id="cancel">
+				<div class="c_line"></div>
+				<div class="c_line"></div>
+			</div>
+			<h2>Mark down what you have learn</h2>
+			<ul>
+				<li><label>Type：</label><input type="text" name="n_type" placeholder="HTML or CSS...."></li>
+				<li><label>Title ：</label><input type="text" name="n_title" placeholder="less than 40 words...."></li>
+				<li><label>Note：</label><textarea name="n_note" placeholder="your notes...."></textarea></li>
+			</ul>
+			<div id="add_note">Add</div>
+		</div>
+	</div>
+</body>
+</html>

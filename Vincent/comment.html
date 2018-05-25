@@ -1,0 +1,91 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vincent-Comment</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/comment.css">
+	<script type="text/javascript" src="./js/header.js"></script>
+	<script type="text/javascript" src="./js/comment.js"></script>
+</head>
+<body>
+	<!-- 页面盒子 -->
+	<div id="comment">
+		<!-- 顶部header -->
+		<header id="header">
+			<!-- header左侧的区域 -->
+			<div id="icon"></div>
+			<div id="sign">
+				| Vincent
+			</div>
+			<!-- header右侧导航栏区域 -->
+			<nav>
+				<ul id="nav">
+					<li><div class="line1" id="line1"></div><a href="./main.html">Home</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./photo.html">Photo</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./media.html">Media</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./factory.html">Factory</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./comment.html"  class="active">Comment</a><div class="line2"></div></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- 内容部分 -->
+		<div id="content">
+			<!-- comment区域 -->	
+			<div id="commentBox"> 						
+				<!-- 左侧输入框 -->
+				<div id="addComment">
+					<h2>Say sth to me ?</h2>
+					<textarea id="addNew"></textarea>
+					<div id="submit_btn">Submit</div>
+					<div id="register_box">
+						<!-- <form id="register" action=""> -->
+							<input type="text" name="name" class="info" placeholder="your name ...">
+							<input type="email" name="email" class="info" placeholder="your email ...">
+							<input type="tel" name="tel" class="info" placeholder="your tel ...">
+							<input type="submit" name="submit" value="Register" id="submit">
+						<!-- </form> -->
+					</div>
+				</div>
+				<!-- 右侧显示评论 -->
+				<div id="showComment">
+					<!-- 消息显示列表 -->
+					<ul id="msgList">
+						<li id="example">
+							<div class="msgBox">
+								<!-- 右侧删除键 -->
+								<div class="delCtr">
+									<div class="delLine"></div>
+									<div class="delLine"></div>
+								</div>
+								<!-- 评论内容 -->
+								<p class="topMsg"># <label>xxx</label><time> 16:18 ------ 2018-05-17</time></p>
+								<p class="mainMsg">Here leave your msg.........</p>
+								<!-- 次级评论列表 -->
+								<ul class="comList">
+									<!-- <li>
+										<div class="secBox">
+											<p class="secMsg">#<label>13631474749</label><time> 16:18 ------ 2018-05-17</time></p>
+											<p class="secMain">Yes i can't agree any more.........</p>
+										</div>
+									</li> -->
+								</ul>
+								<!-- 发表二次评论 -->
+								<div class="secMsg">
+									<!-- <form action=""> -->
+										<input type="text" name="msg"><input type="submit" name="submit" value="reply">
+									<!-- </form>	 -->
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

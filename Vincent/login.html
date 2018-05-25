@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vincent-Login</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<script type="text/javascript" src="./js/login.js"></script>
+</head>
+<body>
+	<!-- 登录主页 -->
+	<div id="login"> 
+		<!-- 背景 -->
+		<img src="./images/bg.jpg" id="bg">
+		<!-- 欢迎词 -->
+		<h1>Nice to Meet You</h1>
+		<div id="head"><img src="./images/avtar.png"></div>
+		<div id="loginBox">
+			<div id="l_box">
+				<form id="login_form" name="login_form" method="post" action="./admin/login.php">
+				<input type="text" name="username">
+				<input type="password" name="password">
+				</form>
+				<div id="l_btn"><p>Go</p></div>
+				<p class="switch">I'm visitor,have a look~</p>
+			</div>
+			<div id="r_box">
+				<form id="register_form"  name="register_form" method="post" action="./admin/register.php">
+				<input type="text" name="v_name">
+				<input type="email" name="v_email">
+				<input type="tel" name="v_tel">
+				</form>
+				<div id="r_btn"><p></p></div>
+				<p class="switch">Login or Pleace leave your msg~</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

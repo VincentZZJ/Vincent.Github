@@ -1,0 +1,285 @@
+body{
+	overflow-x: hidden;
+}
+/*页面盒子样式*/
+#photo{
+	width: 100%;
+	/*width: 150%*/				/*手机的样式*/
+	height: 1160px;
+	/*background: rgba(10,10,10,0.8);*/
+	/*background: rgba(246,246,246,1);*/
+	background: rgba(10,10,10,0.8);
+	opacity: 1;
+	transition: 1s;
+	/*clear: both;*/
+}
+/*海报区域样式*/
+		#banner{
+			width: 100%;
+			height: 500px;
+			padding-top: 70px;
+			position: relative;
+			/*background: rgba(10,10,10,0.8);*/
+			/*background:rgba(84,85,81,1);*/
+			/*border-bottom: 2px solid #fff;*/
+		}
+		#pic{
+			width: 1200px;
+			height: 460px;
+			position: relative;
+			/*border: 1px solid red;*/
+			margin: 10px auto;
+			/*background:rgba(84,85,81,1);*/
+			padding: 10px;
+			background: rgba(0,0,0,0.2);
+			border-radius: 8px;
+		}
+		#pic>img{
+			display: block;
+			width: 640px;
+			height: 426px;
+			position: absolute;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px  0px 10px #000;
+			transition: 1s;
+			/*transition-delay: 1s;*/
+			transition-duration: 1s;
+			top: 5%;
+			cursor: pointer;
+			/*z-index: 3;*/
+		}
+		.life{
+			left: 25%;
+			z-index: 10;
+		}
+		.travel{
+			/*left: 51.5%;*/
+			left: -4%;
+			opacity: 0.2;
+			z-index: 5;
+			transform: scale(0.8);
+		}
+		.sport{
+			right: -4%;
+			opacity: 0.2;
+			z-index: 5;
+			transform: scale(0.8);
+		}
+		#l_turn,#r_turn{
+			width: 36px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			font-size: 36px;
+			position: absolute;
+			border-radius: 5px;
+			background:rgba(0,0,0,0.2);
+			top: 46%;
+			color: #fff;
+			cursor: pointer;
+		}
+		#l_turn{
+			left: 2%;
+		}
+		#r_turn{
+			right: 2%;
+		}
+		#gas{
+			width: 240px;
+			height: 10px;
+			/*border: 1px solid blue;*/
+			background: rgba(0,0,0,0.2);
+			position: absolute;
+			bottom: 2%;
+			left: 42%;
+			border-top-right-radius: 50%;
+			border-top-left-radius: 50%;
+			box-shadow: 0px 0px 10px #000;
+			transition: 0.2s;
+		}
+		/*内容模块样式区域*/
+		#content{
+			width: 90%;
+			margin: 10px auto;
+			position: relative;
+			background:rgba(84,85,81,0.8);
+			padding: 5px;
+			border-radius: 8px;
+		}
+		/*统一样式*/
+		#pic_aside{
+			width: 200px;
+			height: 420px;
+			margin: 20px;
+			opacity: 0.6;
+			/*background-position: -200px 0px;*/
+			transition: 1s;
+		}
+		.pic_aside{
+			border: none;
+			border-radius: 8px;
+			box-shadow: 0px 0px 10px #000;
+		}
+		.desc{
+			font-size: 60px;
+			font-family: "华文隶书";
+			color: #fff;
+			position: absolute;
+			top: 40%;
+			left: 5%;
+			transition: 1s;
+			/*cursor: unset;*/
+		}
+		#c_box,#c_travel,#c_sport{
+			width: 100%;
+			height: 500px;
+			margin: 10px auto;
+			padding-top: 10px;
+			border-bottom: 2px solid #545551;
+			position: relative;
+		}
+		.aside_line{
+			width: 4px;
+			height: 430px;
+			position: absolute;
+			background: -webkit-gradient(linear, left top,right bottom , from(rgba(230, 219, 116, 1)), to(rgba(54, 85, 214, 0.8)));
+			top: 5%;
+			left: 20%;
+		}
+		/*生活类*/
+		/*#c_box>div:first-child{
+			background: url("./images/photo/live_aside.png") no-repeat;
+		}*/
+
+		#pics_box{
+			width:876px;
+			height: 328px;
+			border: 2px solid #fff;
+			border-radius: 4px; 
+			position: absolute;
+			padding: 2px;
+			right: 5%;
+			top: 16%;
+			font-size: 0px;
+			/*overflow-y: hidden;*/
+			opacity: 1;
+			transition: 1s;
+		}
+		.pics_box{
+			position: relative;
+		}
+		.pics_box>img{
+			border: 0px;
+			width: 215px;
+			height: 160px;
+			opacity: 0.4;
+			border-radius: 4px;
+			margin: 2px;
+			box-shadow: 0px 0px 10px #000; 
+			vertical-align: middle;
+			cursor: pointer;
+			/*transition: 1s;*/
+			/*transition-delay: 1s;*/
+			/*transition-duration: 0.2s;*/
+			/*float: left;*/
+			/*position: absolute;*/
+			/*position: relative;*/
+			/*margin: 10px 5px;*/
+		}
+		/*.pics_box>img:hover{
+			opacity: 1;
+			cursor: pointer;
+		}*/
+		.pic_up,.pic_down{
+			width: 28px;
+			height: 40px;
+			text-align: center;
+			font-size: 26px;
+			line-height: 40px;
+			color: #fff;
+			/*text-transform: rotateY(90deg);*/
+			background: rgba(0,0,0,0.6);
+			position: absolute;
+			transform: rotate(90deg);
+			right: 1%;
+			top: 40%;
+			cursor: pointer;
+			/*z-index: 1000;*/
+		}
+		.pic_down{
+			top: 50%;
+			/*margin-bottom: 30px;*/
+
+		}
+		#pics_nav{
+			/*height: px;*/
+			/*border: 1px solid red;*/
+			position: absolute;
+			top: 1%;
+			right: 4%;
+		}
+		#pics_nav>li{
+			width: 40px;
+			height: 40px;
+			float: right;
+			padding: 2px;
+			/*background: rgba(0,0,0,0.6);*/
+			/*border: 4px solid rgba(102,217,239,0.8);*/
+			border-radius: 50%;
+			margin-right: 10px;
+			box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+			transition: 1s;
+		}
+		#pics_nav>li:first-child{
+			padding: 4px;
+			/*background: rgba(0,0,0,0.4);*/
+			cursor: pointer;
+			background: none;
+			z-index: 2;
+			transition: 1s;
+			/*z-index: 100;*/
+		}
+		#p_lines{
+			width: 40px;
+			height: 40px;
+			transition: 1s;
+			border-radius: 50%;
+			background: rgba(0,0,0,0.4);
+			z-index: 1;
+			position: relative;
+		}
+		#pics_nav img{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+		}
+		.pics_li{
+			/*cursor: pointer;*/
+			opacity: 0;
+			transition: 1s;
+		}
+		.p_line1,.p_line2,.p_line3{
+			width: 32px;
+			height: 4px;
+			/*margin: 19px ;*/
+			position: absolute;
+			background: rgba(102,217,239,0.8);
+			transition: 0.5s;
+			transition-delay: 0.5s;
+			/*padding: 1px;*/
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+			left: 10%;
+		}
+		.p_line1{
+			top: 28%;
+			/*transform: translateY(8px) rotate(45deg);*/
+		}
+		.p_line2{
+			top: 46%;
+			/*display: none;*/
+		}
+		.p_line3{
+			top: 62%;
+			/*transform: translateY(-6px) rotate(-45deg);*/
+		}

@@ -1,0 +1,421 @@
+	/*主盒子样式*/
+		#media{
+			width: 100%;
+			height: 100%;
+			background: rgba(10,10,10,0.8);
+			transition: 1s;
+			opacity: 1;
+		}
+		/*下面内容部分*/
+		#content{
+			width: 100%;
+			height: 592px;
+			padding-top: 70px;
+			/*border: 1px solid red;*/
+		}
+		/*media盒子样式*/
+		#play_wrap{
+			width: 900px;
+			height: 560px;
+			/*border: 1px solid red;*/
+			border-radius: 8px;
+			background: rgba(0,0,0,0.2);
+			background: none;
+			box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+			margin: 10px auto;
+			padding: 5px;
+			position: relative;
+			left: 0px;
+			z-index: 1;
+			/*transition: 0.2s;*/
+			/*-webkit-filter :blur(10px);*/
+		}
+		/*播放盒子样式*/
+		#playBox{
+			width: 100%;
+			height: 460px;
+			background: none;
+			z-index: 10;
+			/*opacity: 0;*/
+			/*-webkit-filter :blur(10px);*/
+		}
+		#mvBox{
+			/*display: none;*/
+			position: absolute;
+			width: 800px;
+			height: 460px;
+			border-radius: 8px;
+			box-shadow: 0px 0px 15px rgba(0,0,0,0.8);
+			top: 20%;
+			left: 20%;
+			/*border: 1px solid red;*/
+			z-index: 200;
+			display: none;
+			transition: 0.5s;
+			opacity: 0;
+			/*transform: scale(0.2,0.2) rotateX(-180deg);*/
+		}
+		@keyframes mvIn{
+			from {transform: scale(0.2,0.2) rotateX(-180deg);}
+			to {transform: scale(1) rotateX(0deg);}
+		}
+		@keyframes mvOut{
+			from {transform: scale(1) rotateX(0deg);}
+			to {transform: scale(0.2,0.2) rotate(360deg);}
+		}
+		#mv{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		#mv_ctr{
+			width: 60px;
+			height: 40px;
+			border-radius: 10px;
+			background: rgba(199,203,209,0.2);
+			position: absolute;
+			right: -66px;
+			cursor: pointer;
+		}
+		.mvline{
+			width: 46px;
+			height: 4px;
+			margin : 10px auto;
+			background: #fff;
+			transition: 0.5s;
+		}
+		#mvPlay{
+			width: 780px;
+			height: 440px;
+			border-radius: 8px;
+			margin: 10px;
+			box-shadow: 0px 0px 15px rgba(0,0,0,0.8);
+		}
+		/*#mv_ctr>div:first-child{
+			transform: translateY(10px) rotate(30deg);
+		}
+		#mv_ctr>div:last-child{
+			transform: translateY(-4px) rotate(-30deg);
+		}	*/	
+		/*播放盒子的背景*/
+		#album_bg{
+			width: 100%;
+			height: 100%;
+			background: url("../images/music/Vivalavida-ColdPlay.jpg") no-repeat;
+			background-size: cover;
+			-webkit-filter : blur(5px);
+			position: relative;
+		}
+		/*顶部的信息条*/
+		.navTop{
+			width: 100%;
+			height: 50px;
+			position: absolute;
+			top: 0px;
+			color: #fff;
+			z-index: 10;
+		}
+		/*声音按钮*/
+		#volCtr_btn{
+			width: 60px;
+			height: 36px;
+			float: left;
+			text-align: center;
+			font-size: 22px;
+			line-height: 36px;
+			margin-left: 10px;
+			margin-top: 8px;
+			border-radius: 10px;
+			cursor: pointer;
+			/*transition: 1s;*/
+			background: rgba(199,203,209,0.2);
+		}
+		/*音乐的标题*/
+		#m_title{
+			width: 300px;
+			line-height: 50px;
+			font-size: 18px;
+			text-align: center;
+			float: left;
+			margin-left: 230px;
+		}
+		/*切换音乐MV的按钮*/
+		#switchMV{
+			float: right;
+			width: 50px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 10px;
+			text-align: center;
+			font-size: 22px;
+			background: rgba(108,175,242,0.8);
+			margin: 10px 5px;
+			cursor: pointer;
+			/*transition: 1s;*/
+		}
+		/*音乐列表*/
+		#list_btn{
+			width: 50px;
+			height: 32px;
+			float: right;
+			border-radius: 8px;
+			margin:10px 15px;
+			cursor: pointer;
+			transition: 1s;
+			background: rgba(199,203,209,0.2);
+		}
+		#lines{
+			position: relative;
+		}
+		.line{
+			width: 40px;
+			height: 4px;
+			margin: 5px;
+			background: #fff;
+			transition: 0.2s;
+		}
+		/*中间的album碟*/
+		#album{
+			width: 210px;
+			height: 210px;
+			border-radius: 50%;
+			background: rgba(0,0,0,0.3);
+			position: absolute;
+			top: 26%;
+			left: 39%;
+		}
+		#album>img{
+			border: none;
+			vertical-align: middle;
+			width: 150px;
+			height: 150px;
+			margin: 31px 29px;
+			border-radius: 50%;
+			transition-timing-function: linear;
+			animation: rotate 5s infinite linear;
+			animation-play-state: paused;
+		}
+		/*旋转动画*/
+		@keyframes rotate{
+			from {transform:rotate(0);}
+			to {transform: rotate(1turn);}
+		}
+		/*进度条盒子*/
+		#durCtr{
+			width: 100%;
+			height: 20px;
+			border-radius: 4px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+			background: rgba(255,44,81,1);
+			position: relative;
+			/*-webkit-filter :blur(10px);*/
+		}
+		/*过程进度条*/
+		#process{
+			width: 0px;
+			height: 20px;
+			position: absolute;
+			left: 0px;
+			background: -webkit-gradient(linear, left center,right center , from(rgba(214, 54, 54, 1)), to(rgba(54, 85, 214, 0.8)));
+		}
+		/*进度条*/
+		#dur_bg{
+			width: 620px;
+			height: 20px;
+			background: gray;
+			position: relative;
+			margin: 0 auto;
+			cursor: pointer;
+		}
+		#showTime{
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			font-size: 16px;
+			position: absolute;
+			color: #fff;
+			left: 0px;
+			top: -26px;
+			opacity: 0;
+			/*transition: 1s;*/
+		}
+		/*滑块*/
+		#dur_picker{
+			width: 8px;
+			height: 26px;
+			position: absolute;
+			left: 0px;
+			top: -3px;
+			z-index: 100;
+			background: red;
+			cursor: pointer;
+		}
+		/*两侧时间显示*/
+		#nowTime,#endTime{
+			position: absolute;
+			width: 138px;
+			height: 20px;
+			line-height: 20px;
+			font-size: 16px;
+			text-align: center;
+			top: 0px;
+			color: #fff;
+		}
+		#nowTime{
+			left: 0px;
+			border-right: 2px solid #fff;
+		}
+		#endTime{
+			right: 0px;
+			border-left:2px solid #fff;
+		}
+		/*下侧控制条*/
+		#control{
+			width: 100%;
+			height: 80px;
+			border-bottom-right-radius: 8px;
+			border-bottom-left-radius: 8px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+			background: #fff;
+			position: relative;
+			/*-webkit-filter :blur(10px);*/
+		}
+		#prev,#play,#next{
+			position: absolute;
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			background: rgba(0,0,0,0.6);
+			top: 10%;
+			cursor: pointer;
+		}
+		#prev{
+			left: 33%;
+		}
+		#play{
+			left: 48%;
+		}
+		#next{
+			left: 63%;
+		}
+		.con_pic{
+			width: 55px;
+			height: 55px;
+			margin: 5px;
+			border-radius: 50%;
+			border: none;
+			vertical-align: middle;
+		}
+		/*左侧音量控制键*/
+		#volCtr{
+			width: 20px;
+			height: 100%;
+			position: absolute;
+			/*background: rgba(100,165,227,0.8);*/
+			background: rgba(255,44,81,1);
+			border-radius: 4px;
+			top: 0px;
+			/*left: -40px;*/
+			left: 10px;
+			opacity: 0;
+			display: none;
+			/*transition: 1s;*/
+		}
+		#volume{
+			width: 20px;
+			height: 250px;
+			position: absolute;
+			bottom: 0px;
+			background: -webkit-gradient(linear, right bottom,left top , from(rgba(52, 124, 247, 1)), to(rgba(247, 41, 70, 0.8)));
+		}
+		#vol_show{
+			width: 20px;
+			height: 20px;
+			font-size: 20px;
+			line-height: 20px;
+			position: absolute;
+			bottom: 245px;
+			left: -40px;
+			text-align: center;
+			color: #fff;
+			opacity: 0;
+			/*transition: 1s;*/
+		}
+		#vol_bg{
+			width: 20px;
+			height: 500px;
+			border-top: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+			margin: 30px 0px;
+			background: gray;
+			position: relative;
+			cursor: pointer;
+		}
+		.vol_add,.vol_del{
+			width: 20px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			position: absolute;
+			cursor: pointer;
+		}
+		.vol_add{
+			top: 0px;
+		}
+		.vol_del{
+			bottom: 5px;
+		}
+		#vol_picker{
+			width: 24px;
+			height: 10px;
+			background: red;
+			position: absolute;
+			bottom: 250px;
+			left: -2px;
+			z-index: 100;
+		}
+		/*右侧列表*/
+		#list_bg{
+			width: 160px;
+			height: 100%;
+			/*border-bottom-right-radius: 8px;
+			border-top-right-radius: 8px;*/
+			border-radius: 8px;
+			background: #fff;
+			position: absolute;
+			top: 0px;
+			/*right: -160px;*/
+			right: 10px;
+			opacity: 0;
+			display: none;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+			/*background: rgba(171,177,186,0.6);*/
+			/*-webkit-filter:blur(1px);*/
+			/*transition: 0.2s;*/
+			/*z-index: -1;*/
+		}
+		#play_list>li{
+			/*background: none;*/
+			width: 155px;
+			height: 50px;
+			line-height: 50px;
+			border-bottom: 1px solid rgba(170,174,180,0.6);
+			padding:0px 2px;
+			cursor: pointer;
+			overflow: hidden;
+			position: relative;
+		}
+		#play_list>li h3{
+			position: relative;
+			left: 0px;
+			width: 151px;
+			line-height: 50px;
+			font-size: 18px;
+			font-weight: normal;
+			color: gray;
+			text-align: center;
+			/*border: 1px solid red;*/
+		}

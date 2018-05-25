@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vincent-Home</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script type="text/javascript" src="./js/header.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+	<!-- 主页盒子，用于页面切换时的动画效果 -->
+	<div id="main">
+		<!-- 顶部header -->
+		<header id="header">
+			<!-- header左侧的区域 -->
+			<div id="icon"></div>
+			<div id="sign">
+				| Vincent
+			</div>
+			<!-- header右侧导航栏区域 -->
+			<nav>
+				<ul id="nav">
+					<li><div class="line1" id="line1"></div><a href="./main.html" class="active">Home</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./photo.html">Photo</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./media.html">Media</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./factory.html">Factory</a><div class="line2"></div></li>
+					<li><div class="line1"></div><a href="./comment.html">Comment</a><div class="line2"></div></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- 内容部分 -->
+		<div id="content">
+			<!-- 欢迎海报 -->
+			<div id="poster_wel">
+				<img src="./images/welcome_bg.jpg">
+				<div id="txt">
+					<h1>Welcome</h1>
+					<div id="w_line"></div>
+				</div>
+			</div>
+			<!-- 个人简介页 -->
+			<div id="self_intro">
+				<h1>I'm <label>Vincent</label></h1>
+				<h3>I come from GDUT</h3>
+				<p>
+					Here is my personal homepage,welcome you guys,please enjoy it!<br/>If you get interested in it,contact with me.
+				</p>
+				<!-- 分隔栏 -->
+				<div id="gas"></div>
+			</div>
+			<!-- 分页概况 -->
+			<div id="page_link">
+				<!-- div1-照片概述 -->
+				<div id="box_pic">
+					<div class="p_icon"></div>
+					<div class="p_line0"></div>
+					<div class="p_line1"></div>
+					<h2>My Photo</h2>
+					<p>
+						There are some images about me ~<br>
+						don't U have a look? 
+						There are some images about me ~<br>
+						don't U have a look? 
+						There are some images about me ~<br>
+						don't U have a look? 
+					</p>
+					<!-- 链接按钮 -->
+					<div class="links">Enjoy it</div>
+					<!-- 边框动画 -->
+					<div class="l_top p_line"></div>
+					<div class="l_right p_line"></div>
+					<div class="l_bottom p_line"></div>
+					<div class="l_left p_line"></div>
+				</div>
+				<!-- div2-音乐概述 -->
+				<div id="box_mus">
+					<div class="p_icon"></div>
+					<div class="p_line0"></div>
+					<div class="p_line1"></div>
+					<h2>Music & Video</h2>
+					<p>
+						Music is a gift from god, as well as video ~<br>
+						May U enjoy them !
+						Music is a gift from god, as well as video ~<br>
+						May U enjoy them !
+						Music is a gift from god, as well as video ~<br>
+						May U enjoy them !
+					</p>
+					<!-- 链接按钮 -->
+					<div class="links">Enjoy it</div>
+					<!-- 边框动画 -->
+					<div class="l_top p_line"></div>
+					<div class="l_right p_line"></div>
+					<div class="l_bottom p_line"></div>
+					<div class="l_left p_line"></div>
+				</div>
+				<!-- div3-爱好概述 -->
+				<div id="box_hob">
+					<div class="p_icon"></div>
+					<div class="p_line0"></div>
+					<div class="p_line1"></div>
+					<h2>My Notes</h2>
+					<p>
+						I have a lot of interest ~ <br>
+						If U have the same, Maybe we can have a good time! 
+						I have a lot of interest ~ <br>
+						If U have the same, Maybe we can have a good time! 
+						I have a lot of interest ~ <br>
+						If U have the same, Maybe we can have a good time! 
+					</p>
+					<!-- 链接按钮 -->
+					<div class="links">Enjoy it</div>
+					<!-- 边框动画 -->
+					<div class="l_top p_line"></div>
+					<div class="l_right p_line"></div>
+					<div class="l_bottom p_line"></div>
+					<div class="l_left p_line"></div>
+				</div>
+			</div>
+			<!-- 脚部区域 -->
+			<!-- 在手机端使用点击事件触发 -->
+			<footer id="foot">
+				<h2>Click Me?</h2>
+				<h1>To get more ? Leave your Message</h1>
+				<!-- <form> -->
+				<div class="form">
+					<input type="text" name="name" class="information">
+					<input type="email" name="email" class="information">
+					<input type="tel" name="tel" class="information">
+					<textarea name="message" class="information"></textarea>
+					<input type="submit" name="submit" value="send" id="send">
+					<div id="contain">
+						<div class="placeholder">Your Name</div>
+						<div class="placeholder">Your Email</div>
+						<div class="placeholder">Your Tel</div>
+						<div class="placeholder">Your Message</div>
+					</div>
+				</div>				
+				<!-- </form> -->
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
